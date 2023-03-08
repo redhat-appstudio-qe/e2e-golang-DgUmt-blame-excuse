@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-go-basic-do2t
+  namespace: e2e-demos-uoba-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:842b32f91f50cf8a50a1f39bf21e702299ce97fe8a66a6e53e7ca95ee116bac9
+        name: my-go
+        resources: {}
+status: {}
